@@ -1,0 +1,170 @@
+.outerCircle {
+    width: 300px;
+    height: 300px;
+    background-color: #e0f7fa; 
+    border: 6px solid #00796b; 
+    border-radius: 50%;
+    position: relative; 
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(0, 150, 136, 0.5);
+  }
+  
+  .innerCircle {
+    width: 20px;
+    height: 20px;
+    background-color: #000; 
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    z-index: 999;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  }
+   
+  /* Designing the hours texts */
+.number {
+    position: absolute;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.twelve {
+    top: 20px;
+    left: 140px;
+}
+
+.one {
+    top: 40px;
+    left: 210px;
+}
+
+.two {
+    top: 80px;
+    left: 245px;
+}
+
+.three {
+    top: 140px;
+    left: 260px;
+}
+
+.four {
+    top: 200px;
+    left: 245px;
+}
+
+.five {
+    top: 240px;
+    left: 210px;
+}
+
+.six {
+    top: 260px;
+    left: 140px;
+}
+
+.seven {
+    top: 240px;
+    left: 70px;
+}
+
+.eight {
+    top: 200px;
+    left: 35px;
+}
+
+.nine {
+    top: 140px;
+    left: 20px;
+}
+
+.ten {
+    top: 80px;
+    left: 35px;
+}
+
+.eleven {
+    top: 40px;
+    left: 70px;
+}
+
+/* designing hour, min and sec hand */
+.hourArrow {
+    position: absolute;
+    top: 80px;     
+    left: 147.5px;    
+    width: 6px;     
+    height: 70px;   
+    background-color: #00796b; 
+    border-radius: 3px; 
+    z-index: 5;    
+
+    transform-origin: 50% 100%;/* placing a pin to start rotation, center-bottom as left 50% and top 100%, without this it rotates from the center of the clock-hand which we don't want */
+}
+
+.minArrow {
+    position: absolute;
+    top: 60px;      
+    left: 146px;    
+    width: 4px;     
+    height: 90px;   
+    background-color: #00796b; 
+    border-radius: 2px;
+    z-index: 6;    
+    
+    transform-origin: 50% 100%;
+}
+
+
+.secArrow {
+    position: absolute;
+    top: 40px;     
+    left: 147px;    
+    width: 2px;     
+    height: 110px;  
+    background-color: #000; 
+    border-radius: 1px;
+    z-index: 7;    
+
+    transform-origin: 50% 100%;
+} 
+
+/* Designing the buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+.save, .clear{
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.save {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00796b;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 121, 107, 0.3);
+  }
+  
+
+ .clear {
+    padding: 10px 30px;
+    border: 2px solid #00796b;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #00796b;
+  }
+  
